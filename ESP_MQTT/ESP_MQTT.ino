@@ -107,12 +107,12 @@ void publishToThingsBoard()
 {
 
   humidity = dht.readHumidity();          // Read humidity (percent)
-  temperature = dht.readtemperatureerature();           // Read temperatureerature (celsius)
+  temperature = dht.readtemperature();           // Read temperature(celsius)
 
   
   // Prepare a JSON payload string
   String payload = "{";
-  payload += "\"temperatureerature\":"; 
+  payload += "\"temperature\":"; 
   payload += String(temperature); 
   payload += ",";
   payload += "\"humidity\":"; 
